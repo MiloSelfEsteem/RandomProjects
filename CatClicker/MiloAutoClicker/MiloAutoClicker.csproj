@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Title>CatClicker by Milo</Title>
+		<Authors>MiloSelfEsteem, 45g on Discord</Authors>
+		<AssemblyTitle>First project w/ C#. Mogs OP Autoclicker.</AssemblyTitle>
+		<Description>First project w/ C#. Mogs OP Autoclicker.</Description>
+		<Version>1.2.3</Version>
+		<ApplicationIcon>CatIcon.ico</ApplicationIcon>
+		<PackageIcon>CatIcon.ico</PackageIcon>
+		<Product>CatClicker</Product>
+		<Company>CatGang</Company>
+		<NeutralLanguage>en-UK</NeutralLanguage>
+		<Copyright>Copyright © 2026 @45g</Copyright>
+		<AssemblyName>CatClicker</AssemblyName>
+		<RootNamespace>CatClicker</RootNamespace>
+		<PackageReadmeFile>CatClick.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="CatIcon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\..\CatIcon.ico">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Settings.Designer.cs">
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+
+</Project>

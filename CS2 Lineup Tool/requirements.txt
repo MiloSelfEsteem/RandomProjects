@@ -1,0 +1,9 @@
+requests>=2.31
+beautifulsoup4>=4.12
+pillow>=10.0
+
+# In-app video playback (optional) — without these, the "Watch video"
+# button falls back to opening the clip in your browser instead of
+# playing it inline. Decodes video frames only, no audio.
+imageio>=2.34
+imageio-ffmpeg>=0.4.9
